@@ -2,12 +2,12 @@ async function selection(){
     console.log('In selection()');
     const ele = document.querySelectorAll(".bar");
     for(let i = 0; i < ele.length; i++){
-        console.log('In ith loop');
+        console.log(`In ${i} loop`);
         let min_index = i;
         // Change color of the position to swap with the next min
         ele[i].style.background = 'blue';
         for(let j = i+1; j < ele.length; j++){
-            console.log('In jth loop');
+            console.log(`In ${j} loop`);
             // Change color for the current comparision (in consideration for min_index)
             ele[j].style.background = 'red';
 

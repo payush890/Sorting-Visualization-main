@@ -5,14 +5,14 @@ async function partitionLomuto(ele, l, r){
     // color pivot element
     ele[r].style.background = 'red';
     for(let j = l; j <= r - 1; j++){
-        console.log('In partitionLomuto for j');
+        console.log(`In partition for ${j}`);
         // color current element
         ele[j].style.background = 'yellow';
         // pauseChamp
         await waitforme(delay);
 
         if(parseInt(ele[j].style.height) < parseInt(ele[r].style.height)){
-            console.log('In partitionLomuto for j if');
+            console.log(`In partition for ${j} if `);
             i++;
             swap(ele[i], ele[j]);
             // color 

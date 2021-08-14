@@ -10,7 +10,7 @@ async function merge(ele, low, mid, high){
 
     for(let i = 0; i < n1; i++){
         await waitforme(delay);
-        console.log('In merge left loop');
+        console.log(`In merge left ${i} loop`);
         console.log(ele[low + i].style.height + ' at ' + (low+i));
         // color
         ele[low + i].style.background = 'orange';
@@ -18,7 +18,7 @@ async function merge(ele, low, mid, high){
     }
     for(let i = 0; i < n2; i++){
         await waitforme(delay);
-        console.log('In merge right loop');
+        console.log(`In merge right ${i} loop`);
         console.log(ele[mid + 1 + i].style.height + ' at ' + (mid+1+i));
         // color
         ele[mid + 1 + i].style.background = 'yellow';
